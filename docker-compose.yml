@@ -32,10 +32,8 @@ services:
     image: mysql:latest
     platform: linux/x86_64
     environment:
-      MYSQL_DATABASE: ${DB_DATABASE:-laravel}
-      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-root}
-      MYSQL_PASSWORD: ${DB_PASSWORD:-userpass}
-      MYSQL_USER: ${DB_USERNAME:-username}
+      MYSQL_DATABASE: 'curso_laravel_vue'
+      MYSQL_ROOT_PASSWORD: 'root'
     ports:
       - "3388:3306"
     volumes:
